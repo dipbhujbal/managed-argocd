@@ -10,7 +10,7 @@ spec:
   project: argocd
   source:
     path: projects
-    repoURL: git@github.com:infracloudio/inception-managed-argocd.git 
+    repoURL: git@github.com:dipbhujbal/inception-managed-argocd.git 
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
