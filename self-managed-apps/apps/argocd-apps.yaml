@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd-apps
+  namespace: argocd
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: argocd
+  source:
+    path: argocd-apps
+    repoURL: git@github.com:infracloudio/inception-managed-argocd.git 
+    targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+    - createNamespace=true
+    automated:
+      prune: true
+      selfHeal: true
