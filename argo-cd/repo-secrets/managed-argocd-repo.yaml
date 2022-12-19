@@ -1,19 +1,14 @@
-apiVersion: bitnami.com/v1alpha1
-kind: SealedSecret
+apiVersion: v1
+kind: Secret
 metadata:
-  creationTimestamp: null
   name: private-repo
   namespace: argocd
-spec:
-  encryptedData:
-    sshPrivateKey: AgABLfY3QbMuj7EtBqDh1vLvgLBKVdMLrv3/pFnWaxxz21D/8r/Y5gu4dbrkrNbe/bh1sy+ogLkzEVhGg5YGE+dfcTdeiZnBKIS7uguD7A9cNMGABNUyRdxMWtHM39khql4ft1iaswSbpG3k6n/OGsvKpltHO1DIPM6mqkkNMniyoH8o7ErkcIobPyDForU/way0RWsc3st8syCGXHoyGcpBg6/oihpJEFf9kBks1d4Y3uA9imb4eK8ZL7UqX6RUuFQR4Sl3OxskSlYO1P2wuAiPeN4yFHv+spcC5sTzaiT4wnXHVfrBIkQC3gLsVxzpvZ0eRztv9oZ50XfZXh2mkkPZAzhWIeyzYHEkwb+3HxTx9BIx1CPmMP/gNxBgHBnTgufn/vWMH/+5LJ8kRKO2PoVnDLZoB7KcP8Sr/WrE9iWEWgcXDKJ4Rp4n768UG72M7a8SYP4MrNu3aQTrpxnSXVY7iqGNsbyjSFlUO9Iu0a1suP3mEFVnC9/MF4IDgWMwll51ju3JgFyTyxMsXETSaqbkQ6wJ+PllODyTQ+M7GZnJpCrhChxTbvhnZ8PkRZejODVUqm5TMlZEkfDaoxvVoXHLog2gIvu3UUNce6OY/Py2FbbB0eircuW6ZZ0n+O1zq/xBy4t3yfW//FFT+2GpJMnSn/8m+1WvmWMtvJ1tBZrp2NMJevifBJLvODq3TvlfMP9NUc5tn8JBu41BAUBBxGZpWGOTxRRZ
-    type: AgCoON4AjCF11t44/PSWIFdUpkHreKG0XBm2FfONW9izktOzqFeNKgN3x4uByQbEwuM2uPnQnqRQkNdI4gn96Wp7CaFxiCvnH64nJ8GpxsocPZcvNgexK2UlqIvfFd0p0ZdH7rvdK9zFZ8HCFtV59tx5/15lVGCGmh4nqQRTPSP59GQsV8FVjGqhohP8txPaTy8CJl4lPz5BzwGu5QqRrBTDMb49aPwAAzq3r8iYhb+HdoytugdZN/x01Pchx+i6LnfO6DA//1C8aGxqPNxI1hhpZ8U4MSyRYI68ZtKYJ964lnlzMSU+SYE70IDOLVcOoQA00uyldWjraD5G/i99aMtsvu7tbBdMrzBYTeroVrUE3uMTCA+lI0msMiwv+rN8wP9UYzTHJXlRaM81FKaj6bY2zvD995WlIL0yOPgU1vrVIsGwZQ1dDXnF5euWlhaOO2AbgkqrsBHe3+FvvJsuKUYvehsSvS9mrBFLcmb/ZNgrZS2Ia772dKqc6bMSNewa/XNnLkXPydXqCih8nJHK7tp0J7p7aQp1ffcAezhkd1n0/pZYCxpUk/8OJcZdMbLreoUBDDbsj7jaCWqXKq9mRgjHbZ7v1PGUPO3pCe8MGYyDIkBdxXfOPD29StP5VgMKg80LyPBlqKg+XkpDLpN6MnUC87YXz+f/cUidjmvqMqr7TZxDjKnry6tQ5/gI28I7dNFXkX8=
-    url: AgAx8YYtyyHT8ttsiITt75f3ZqLHQjx7ZDg6brCQak6fJ5kXho639AJVVRecyVT1fbDK2g358HHtccU00roSGu+WwwLU9EqwOjJ0879FEhaTNtm0SuVJtyCP64Aw4k5SrCRa8u+kNXemTDGfX4xuFN1x5kMftMbgDJDSbInNUbCflcwwyrR6aAOowbiYoc/OI8D+w5I9xlCS6BcICW+3bU6yD2vsZLkgfhv6d7aNA1Ym3tYxlTFCJeCgXr1JmFv25DMDbfEl6zsfMJB4QxVCw1iOEXATGmL6WpnNtUH5X3e8VUBnfAMJj0cGAZHXDn3QcfzP225WDgYg1ZMa3EKMguxJE64dYAfFsCRJFkW3i5DYSkBT6r1PBTtc7zh+zYmnYRUXxRv6HUG6WWP4eBo9XM6Ar2Sa0vJQDpQXSySjwDyeITUWlDH9dd8S0wzVc6tnu5vzPKzlMm0/71KB0SVLv9+aLN58OqYPVWnvDRpVKpwyCHmEB2dxKpDQnSe5sWLrrjG9fzfrTulb1WDwPMC+oaS3hdwdTKSa6ASzjeqKXvXh3pcd3k7wPYWBIh/xcALHopyc1D37rmi64DkHFUaEdjxleGStMLC01RQMd7puRJpgvNPmZnbN4zUgTlpH7FicqzZIojK5VbbHyHkjoydZHF0d26KZPSJDaoX/Bz9NbyWdUvbsuMUbPa2H2qL2qsMbpo8vXhVvVuyyygMeLilHjBKEe2Tf72uw2y3iBjwdcvxtec9YqJVqBBicaDmUGA==
-  template:
-    data: null
-    metadata:
-      creationTimestamp: null
-      labels:
-        argocd.argoproj.io/secret-type: repository
-      name: private-repo
-      namespace: argocd
+  labels:
+    argocd.argoproj.io/secret-type: repository
+  annotations:
+    avp.kubernetes.io/path: "argo-app-secrets/show/repo-secrets"
+stringData:
+  type: <type>
+  url: <url>
+  sshPrivateKey: <ssh-private-key>
+    
