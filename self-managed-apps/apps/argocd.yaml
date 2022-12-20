@@ -10,6 +10,8 @@ spec:
   project: argocd
   source:
     path: argo-cd
+    plugin:
+      name: argocd-vault-plugin
     repoURL: https://github.com/dipbhujbal/managed-argocd.git 
     targetRevision: HEAD
   syncPolicy:
