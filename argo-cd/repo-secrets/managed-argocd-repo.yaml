@@ -6,7 +6,7 @@ metadata:
   labels:
     argocd.argoproj.io/secret-type: repository
   annotations:
-    avp.kubernetes.io/path: "argo-app-secrets/repo-secrets"
+    avp.kubernetes.io/path: "repo-secrets/data/keys"
 stringData:
   type: <type>
   url: <url>
