@@ -6,7 +6,7 @@ namespace: argocd
 bases:
  - base/ 
 resources:
-- repo-secrets/
+- repo-secrets/managed-argocd-repo.yaml
 - cluster-secrets/
 
 patchesStrategicMerge:
