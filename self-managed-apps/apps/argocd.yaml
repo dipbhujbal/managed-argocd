@@ -12,7 +12,7 @@ spec:
     path: argo-cd
     plugin:
       name: argocd-vault-plugin
-    repoURL: git@github.com:dipbhujbal/managed-argocd.git 
+    repoURL: https://github.com/dipbhujbal/managed-argocd.git 
     targetRevision: HEAD
   syncPolicy:
     syncOptions:

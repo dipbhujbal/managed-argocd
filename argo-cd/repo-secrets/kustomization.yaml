@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
 - managed-argocd-repo.yaml
-- secret.yaml
+
