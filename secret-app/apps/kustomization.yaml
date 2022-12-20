@@ -4,6 +4,6 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-- apps/
+- secret-app.yaml
 
 
